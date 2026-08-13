@@ -2,8 +2,8 @@
 
 :root {
   --bg-dark: #070913;
-  --bg-card: rgba(15, 20, 35, 0.6);
-  --bg-card-hover: rgba(22, 30, 52, 0.8);
+  --bg-card: rgba(15, 20, 35, 0.9);
+  --bg-card-hover: rgba(22, 30, 52, 0.95);
   --bg-glass: rgba(255, 255, 255, 0.03);
   --border-glass: rgba(255, 255, 255, 0.08);
   --border-glow: rgba(0, 240, 255, 0.3);

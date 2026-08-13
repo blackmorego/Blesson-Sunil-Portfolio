@@ -417,7 +417,6 @@ export default function Projects() {
                   justifyContent: 'space-between',
                   padding: '16px 24px',
                   borderBottom: '1px solid var(--border-glass)',
-                  background: 'linear-gradient(90deg, rgba(15, 20, 35, 0.95) 0%, rgba(22, 32, 56, 0.95) 100%)',
                   gap: '16px',
                   flexShrink: 0,
                 }}

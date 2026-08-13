@@ -55,7 +55,6 @@ export default function Skills() {
           marginBottom: '50px',
           padding: '24px',
           textAlign: 'center',
-          background: 'linear-gradient(135deg, rgba(15, 20, 35, 0.7) 0%, rgba(20, 28, 48, 0.4) 100%)',
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '8px' }}>

@@ -70,7 +70,6 @@ export default function Contact() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            background: 'linear-gradient(135deg, rgba(15, 20, 35, 0.9) 0%, rgba(20, 28, 48, 0.6) 100%)',
           }}
         >
           <div>
@@ -195,7 +194,6 @@ export default function Contact() {
           className="glass-panel glass-card-interactive"
           style={{
             padding: '36px',
-            background: 'linear-gradient(135deg, rgba(15, 20, 35, 0.9) 0%, rgba(20, 28, 48, 0.6) 100%)',
           }}
         >
           {submitted ? (

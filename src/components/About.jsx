@@ -56,7 +56,6 @@ export default function About() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            background: 'linear-gradient(135deg, rgba(15, 20, 35, 0.8) 0%, rgba(20, 28, 48, 0.5) 100%)',
           }}
         >
           <div>
@@ -73,7 +72,6 @@ export default function About() {
                   width: '64px',
                   height: '64px',
                   borderRadius: '20px',
-                  background: 'linear-gradient(135deg, #00f0ff 0%, #7000ff 100%)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

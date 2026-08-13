@@ -148,7 +148,6 @@ export default function Experience() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            background: 'linear-gradient(135deg, rgba(15, 20, 35, 0.9) 0%, rgba(20, 28, 48, 0.7) 100%)',
           }}
         >
           <AnimatePresence mode="wait">

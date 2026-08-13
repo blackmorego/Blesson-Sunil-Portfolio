@@ -30,7 +30,6 @@ export default function DesignSystemSandbox() {
         className="glass-panel"
         style={{
           padding: '36px',
-          background: 'linear-gradient(135deg, rgba(13, 18, 33, 0.95) 0%, rgba(20, 30, 55, 0.8) 100%)',
           borderColor: accentColor,
           transition: 'border-color 0.4s ease',
         }}

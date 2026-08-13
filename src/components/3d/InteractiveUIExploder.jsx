@@ -149,7 +149,6 @@ export default function InteractiveUIExploder() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, rgba(10, 15, 30, 0.8) 0%, rgba(15, 20, 40, 0.6) 100%)',
           border: '1px solid rgba(0, 240, 255, 0.2)',
           boxShadow: 'inset 0 0 50px rgba(0,0,0,0.5)',
         }}

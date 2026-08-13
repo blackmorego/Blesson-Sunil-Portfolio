@@ -157,7 +157,6 @@ export default function UxProcess() {
         className="glass-panel"
         style={{
           padding: '40px',
-          background: 'linear-gradient(135deg, rgba(13, 18, 33, 0.95) 0%, rgba(20, 30, 55, 0.8) 100%)',
           borderColor: steps[activeStep].color,
           boxShadow: `0 20px 50px -20px ${steps[activeStep].color}30`,
           position: 'relative',
