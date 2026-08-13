@@ -88,10 +88,10 @@ export default function Experience() {
                 padding: '20px 24px',
                 cursor: 'pointer',
                 borderColor: activeTab === idx ? 'var(--accent-cyan)' : 'rgba(255, 255, 255, 0.1)',
-                background:
-                  activeTab === idx
-                    ? 'linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(138, 43, 226, 0.05) 100%)'
-                    : 'var(--bg-card)',
+                backgroundColor: activeTab === idx ? 'var(--bg-card-hover)' : 'var(--bg-card)',
+                backgroundImage: activeTab === idx
+                  ? 'linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(138, 43, 226, 0.05) 100%)'
+                  : 'none',
                 transform: activeTab === idx ? 'translateX(6px)' : 'none',
                 transition: 'all 0.3s ease',
               }}

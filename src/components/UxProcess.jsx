@@ -106,9 +106,10 @@ export default function UxProcess() {
                 padding: '20px',
                 cursor: 'pointer',
                 borderColor: isActive ? step.color : 'rgba(255, 255, 255, 0.1)',
-                background: isActive
+                backgroundColor: isActive ? 'var(--bg-card-hover)' : 'var(--bg-card)',
+                backgroundImage: isActive
                   ? `linear-gradient(135deg, rgba(15, 22, 40, 0.95) 0%, rgba(25, 35, 60, 0.8) 100%)`
-                  : 'var(--bg-card)',
+                  : 'none',
                 boxShadow: isActive ? `0 10px 30px -10px ${step.color}40` : 'none',
                 transform: isActive ? 'translateY(-4px)' : 'none',
                 transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
