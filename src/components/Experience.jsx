@@ -67,7 +67,7 @@ export default function Experience() {
         transition={{ duration: 0.6 }}
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
           gap: '30px',
         }}
       >
