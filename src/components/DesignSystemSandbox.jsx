@@ -203,10 +203,10 @@ export default function DesignSystemSandbox() {
                     buttonState === 'hover'
                       ? `0 10px 25px ${accentColor}80, 0 0 15px ${accentColor}`
                       : buttonState === 'active'
-                      ? `0 2px 10px ${accentColor}60`
+                      ? `inset 0 3px 6px rgba(0,0,0,0.4)`
                       : `0 4px 15px ${accentColor}40`,
                   transform:
-                    buttonState === 'hover' ? 'translateY(-3px)' : buttonState === 'active' ? 'translateY(1px)' : 'none',
+                    buttonState === 'hover' ? 'translateY(-3px)' : buttonState === 'active' ? 'translateY(2px) scale(0.96)' : 'none',
                   opacity: buttonState === 'disabled' ? 0.4 : 1,
                   display: 'inline-flex',
                   alignItems: 'center',
