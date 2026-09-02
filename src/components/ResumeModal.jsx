@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Printer } from 'lucide-react';
+import { X, Download } from 'lucide-react';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -60,8 +60,8 @@ export default function ResumeModal({ isOpen, onClose }) {
               className="btn-secondary"
               style={{ padding: '8px 16px', fontSize: '0.82rem', textDecoration: 'none' }}
             >
-              <Printer size={16} />
-              <span>Print / PDF</span>
+              <Download size={16} />
+              <span>Download</span>
             </a>
             <button
               onClick={onClose}
