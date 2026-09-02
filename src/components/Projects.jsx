@@ -145,6 +145,42 @@ export default function Projects() {
       figmaShareUrl:
         'https://www.figma.com/proto/77b74e2bvYqbed38X91M5G/FOCAL?node-id=28-24',
     },
+    {
+      id: 'bens-spices',
+      title: 'Bens Spices – E-Commerce Website',
+      category: 'web',
+      categoryLabel: 'E-Commerce & Web Design',
+      type: 'Work in Progress',
+      inProgress: true,
+      icon: <ShoppingBag size={24} color="#f59e0b" />,
+      badge: 'Coming Soon',
+      description:
+        'An upcoming e-commerce platform for Bens Spices, focusing on an intuitive catalog, spice blending guides, and a seamless checkout experience. The project is currently in the research and wireframing phase.',
+      deliverables: [
+        'User research and competitor analysis',
+        'Information architecture for product categories',
+        'Low-fidelity wireframing and user flows',
+      ],
+      flowBreakdown: [
+        {
+          title: '1. Discovery & Research (Current)',
+          detail: 'Analyzing user behavior in online grocery shopping and outlining the optimal flow for culinary enthusiasts.',
+        },
+        {
+          title: '2. UI Design & Prototyping (Upcoming)',
+          detail: 'Building high-fidelity mockups with a warm, spice-inspired color palette and intuitive checkout process.',
+        },
+      ],
+      palette: [
+        { name: 'Saffron Gold', hex: '#fbbf24' },
+        { name: 'Paprika Red', hex: '#ef4444' },
+        { name: 'Clove Brown', hex: '#78350f' },
+        { name: 'Sage Green', hex: '#22c55e' },
+      ],
+      tags: ['WIP', 'E-Commerce', 'Web Design', 'UI/UX'],
+      figmaEmbedUrl: '',
+      figmaShareUrl: '',
+    },
   ];
 
   const filteredProjects =
@@ -263,26 +299,48 @@ export default function Projects() {
 
               {/* Right Action Buttons */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexShrink: 0, flexWrap: 'wrap', flex: '1 1 auto' }}>
-                <button
-                  onClick={() => setActiveModalProject(project)}
-                  className="btn-primary"
-                  style={{
-                    padding: '10px 20px',
-                    fontSize: '0.88rem',
-                    gap: '8px',
-                    boxShadow: '0 0 20px rgba(0, 240, 255, 0.35)',
-                    cursor: 'pointer',
-                    minHeight: '42px',
-                    height: 'auto',
-                    whiteSpace: 'normal',
-                    textAlign: 'center',
-                    justifyContent: 'center',
-                    flex: '1 1 auto',
-                  }}
-                >
-                  <Zap size={16} style={{ flexShrink: 0 }} />
-                  <span>Open Interactive Prototype</span>
-                </button>
+                {project.inProgress ? (
+                  <button
+                    disabled
+                    className="btn-secondary"
+                    style={{
+                      padding: '10px 20px',
+                      fontSize: '0.88rem',
+                      gap: '8px',
+                      cursor: 'not-allowed',
+                      opacity: 0.6,
+                      minHeight: '42px',
+                      height: 'auto',
+                      whiteSpace: 'normal',
+                      textAlign: 'center',
+                      justifyContent: 'center',
+                      flex: '1 1 auto',
+                    }}
+                  >
+                    <span>Work in Progress</span>
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setActiveModalProject(project)}
+                    className="btn-primary"
+                    style={{
+                      padding: '10px 20px',
+                      fontSize: '0.88rem',
+                      gap: '8px',
+                      boxShadow: '0 0 20px rgba(0, 240, 255, 0.35)',
+                      cursor: 'pointer',
+                      minHeight: '42px',
+                      height: 'auto',
+                      whiteSpace: 'normal',
+                      textAlign: 'center',
+                      justifyContent: 'center',
+                      flex: '1 1 auto',
+                    }}
+                  >
+                    <Zap size={16} style={{ flexShrink: 0 }} />
+                    <span>Open Interactive Prototype</span>
+                  </button>
+                )}
 
                 {project.figmaShareUrl && (
                   <a
