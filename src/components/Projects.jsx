@@ -150,14 +150,14 @@ export default function Projects() {
       title: 'Bens Spices – E-Commerce Website',
       category: 'web',
       categoryLabel: 'E-Commerce & Web Design',
-      type: 'Work in Progress',
+      type: 'Live Project',
       inProgress: true,
       icon: <ShoppingBag size={24} color="#f59e0b" />,
-      badge: 'Coming Soon',
+      badge: 'Active Live Project',
       description:
-        'An upcoming e-commerce platform for Bens Spices, focusing on an intuitive catalog, spice blending guides, and a seamless checkout experience. The project is currently in the research and wireframing phase.',
+        'A live, ongoing e-commerce platform project for Bens Spices, focusing on an intuitive catalog, spice blending guides, and a seamless checkout experience. The project is actively in the research and wireframing phase.',
       deliverables: [
-        'User research and competitor analysis',
+        'User research and competitor analysis for live market',
         'Information architecture for product categories',
         'Low-fidelity wireframing and user flows',
       ],
@@ -317,7 +317,7 @@ export default function Projects() {
                       flex: '1 1 auto',
                     }}
                   >
-                    <span>Work in Progress</span>
+                    <span>{project.type === 'Live Project' ? 'Live (In Development)' : 'Work in Progress'}</span>
                   </button>
                 ) : (
                   <button
