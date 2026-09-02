@@ -225,7 +225,7 @@ export default function Projects() {
             className={filter === 'web' ? 'btn-primary' : 'btn-secondary'}
             style={{ padding: '8px 20px', fontSize: '0.88rem' }}
           >
-            Web & E-Commerce
+            Website
           </button>
         </div>
       </div>
