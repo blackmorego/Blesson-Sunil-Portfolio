@@ -67,22 +67,7 @@ export default function About() {
                 marginBottom: '24px',
               }}
             >
-              <div
-                style={{
-                  width: '64px',
-                  height: '64px',
-                  borderRadius: '20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 800,
-                  fontSize: '1.8rem',
-                  color: '#fff',
-                  boxShadow: '0 0 25px rgba(0, 240, 255, 0.4)',
-                }}
-              >
-                BS
-              </div>
+
               <div>
                 <h3 className="font-display" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
                   Blesson Sunil
