@@ -70,10 +70,10 @@ export default function About() {
 
               <div>
                 <h3 className="font-display" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-                  Blesson Sunil
+                  My Background
                 </h3>
                 <p style={{ color: 'var(--accent-cyan)', fontSize: '0.9rem', fontWeight: 600 }}>
-                  UI/UX Designer
+                  Bridging Design & Technology
                 </p>
               </div>
             </div>
